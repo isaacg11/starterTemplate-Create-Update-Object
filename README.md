@@ -20,8 +20,12 @@ $ bower install stamplay-js-sdk
 ```
 Stamplay.init('yourAppId');
 ```
+3) **Configure object model**
+- Go to your Stamplay editor and select **Objects**, then click **Add+**
+- Give **object model** a name (e.g "object")
+- Create properties on that model with **name** and **type** (e.g Name:"description" Type:"String")
 
-3) **Create Object**
+4) **Create Object**
 ```
 function createObject(){
 
@@ -34,7 +38,7 @@ function createObject(){
 	});
 }
 ```
-4) **Update Object**
+5) **Update Object**
 ```
 function updateObject(){
 
