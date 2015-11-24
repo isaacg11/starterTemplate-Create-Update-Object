@@ -23,7 +23,7 @@ Stamplay.init('yourAppId');
 3) **Configure object model**
 - Go to your Stamplay editor and select **Objects**, then click **Add+**
 - Give **object model** a name (e.g "object")
-- Create properties on that model with **name** and **type** (e.g Name:"description" Type:"String")
+- Create properties on that model with a property **name** and value **type** (e.g Name:"description" Type:"String")
 
 4) **Create Object**
 ```
