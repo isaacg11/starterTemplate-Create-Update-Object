@@ -1,7 +1,7 @@
 # starterTemplate-Create-Update-Object
 a starter template for creating and updating objects with the Stamplay SDK
 
-**CLONING: When cloning this repo, you must switch out the appId & object Id's with your own to make it work.**
+**CLONING: When cloning this repo, you must initialize your app first to make it work.**
 
  1) **Initialize the front-end of your app with Stamplay**
  <br>
@@ -33,7 +33,7 @@ function createObject(){
 
 	var description = document.getElementById('createData').value;
 
-	var objectInstance = new Stamplay.Cobject('object').Model;
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
 	objectInstance.set('description', description);
 	objectInstance.save().then(function(){
 		alert('object created!');
@@ -46,8 +46,8 @@ function updateObject(){
 
 	var newDescription = document.getElementById('updateData').value;
 
-	var objectInstance = new Stamplay.Cobject('object').Model;
-	objectInstance.fetch('5653be88b3039e5f75c0d088').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	objectInstance.set('description', newDescription);
     	objectInstance.save().then(function(){
     		alert('object updated');
