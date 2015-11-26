@@ -1,5 +1,5 @@
 # starterTemplate-Create-Update-Object
-a starter template for creating and updating objects with the Stamplay SDK
+a Javascript starter template for creating and updating objects with the Stamplay SDK
 
 **CLONING: When cloning this repo, you must initialize your app first to make it work.**
 
@@ -55,5 +55,11 @@ function updateObject(){
 	});
 }
 ```
-
+6) **Run app**
+- To run your app, you'll need to install the Stamplay Command Line Tool. If you have already installed it, ignore this step. Otherwise, enter this command in your command line:
+```
+$ npm install -g stamplay-cli
+```
+- If your app is in development, you can run it on your local server by entering **stamplay start** in your command line.
+- If your app is in production, you can deploy it live by entering **stamplay deploy** in your command line.
 ![alt tag](public/images/sdk-create-update-object-micro-repo.png)
